@@ -1,5 +1,6 @@
 package com.example.demo;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import org.springframework.data.annotation.Id;
 
 import java.util.*;
@@ -7,6 +8,7 @@ import java.util.*;
 @Entity
 public class Client {
     @Id
+    @GeneratedValue
     private String name;
     private int age;
 
